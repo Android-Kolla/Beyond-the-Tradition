@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Kolla</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0, #003300);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+            animation: fadeInDown 1.5s ease;
+            color: #fff;
+            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+            font-weight: lighter;
+            letter-spacing: 2px;
+            animation: fadeInUp 1.5s ease;
+            background: linear-gradient(to right, #00ff00, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            background-color: rgba(0, 255, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #006600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            animation: fadeInUp 2s ease;
+			text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+            box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #00cc00;
+        }
+
+        .image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.1);
+            z-index: -1;
+            animation: zoomIn 3s ease;
+            filter: blur(8px);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+			colour: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/Channel LOGO.png" alt="Android Kolla" class="image">
+		<br>
+		<br>
+		<br>
+		<br>
+        <h1>Android Kolla</h1>
+        <p class="tagline">BEYOND THE TRADITION</p>
+		<br>
+        <button class="button" onclick="window.location.href='https://www.youtube.com/@AndroidKolla';">Watch Now</button>
+		<br>
+		<button class="button" onclick="window.location.href='downloads.html';">Downloads</button>
+		<br>
+		<button class="button" onclick="window.location.href='contactme.html';">Contact Me</button>
+    </div>
+
+    <footer>&copy; 2024 Android Kolla. All rights reserved.</footer>
+</body>
+</html>
